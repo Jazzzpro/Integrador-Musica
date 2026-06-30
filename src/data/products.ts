@@ -8,14 +8,14 @@ export interface Product {
   categoria: string;
 }
 
-export const products: Product[] = [
+export const productos: Product[] = [
   {
     id: 1,
     nombre: 'Fender Stratocaster American Professional II',
     marca: 'Fender',
     precio: 289999,
     stock: 5,
-    img: 'https://images.unsplash.com/photo-1550985616-10810253b84d?w=500',
+    img: '',
     categoria: 'Guitarras eléctricas'
   },
   {
@@ -24,7 +24,7 @@ export const products: Product[] = [
     marca: 'Gibson',
     precio: 415000,
     stock: 3,
-    img: 'https://images.unsplash.com/photo-1564186763535-ebb21ef5277f?w=500',
+    img: '',
     categoria: 'Guitarras eléctricas'
   },
   {
@@ -33,7 +33,7 @@ export const products: Product[] = [
     marca: 'Fender',
     precio: 245000,
     stock: 4,
-    img: 'https://images.unsplash.com/photo-1525201548942-d8c8bc0ddae7?w=500',
+    img: '',
     categoria: 'Bajos eléctricos'
   },
   {
@@ -42,7 +42,7 @@ export const products: Product[] = [
     marca: 'Gibson',
     precio: 380000,
     stock: 2,
-    img: 'https://images.unsplash.com/photo-1605020420620-20c943cc4669?w=500',
+    img: '',
     categoria: 'Guitarras eléctricas'
   },
   {
@@ -51,7 +51,7 @@ export const products: Product[] = [
     marca: 'Epiphone',
     precio: 135000,
     stock: 6,
-    img: 'https://images.unsplash.com/photo-1516924962500-2b4b3b99ea02?w=500',
+    img: '',
     categoria: 'Guitarras eléctricas'
   },
   {
@@ -60,7 +60,7 @@ export const products: Product[] = [
     marca: 'Ibanez',
     precio: 95000,
     stock: 5,
-    img: 'https://images.unsplash.com/photo-1556442291-a6245362bf77?w=500',
+    img: '',
     categoria: 'Guitarras eléctricas'
   },
   {
@@ -69,7 +69,7 @@ export const products: Product[] = [
     marca: 'Fender',
     precio: 65000,
     stock: 8,
-    img: 'https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=500',
+    img: '',
     categoria: 'Guitarras acústicas'
   },
   {
@@ -78,7 +78,7 @@ export const products: Product[] = [
     marca: 'Yamaha',
     precio: 38000,
     stock: 12,
-    img: 'https://images.unsplash.com/photo-1549213713-02ae3304104c?w=500',
+    img: '',
     categoria: 'Guitarras acústicas'
   },
   {
@@ -87,7 +87,7 @@ export const products: Product[] = [
     marca: 'Taylor',
     precio: 210000,
     stock: 3,
-    img: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=500',
+    img: '',
     categoria: 'Guitarras acústicas'
   },
   {
@@ -96,7 +96,7 @@ export const products: Product[] = [
     marca: 'Yamaha',
     precio: 78000,
     stock: 7,
-    img: 'https://images.unsplash.com/photo-1445985543470-41fba5c3144a?w=500',
+    img: '',
     categoria: 'Bajos eléctricos'
   },
   {
@@ -105,7 +105,7 @@ export const products: Product[] = [
     marca: 'Music Man',
     precio: 340000,
     stock: 2,
-    img: 'https://images.unsplash.com/photo-1561777841-6cdb3e0a5502?w=500',
+    img: '',
     categoria: 'Bajos eléctricos'
   },
   {
@@ -114,7 +114,7 @@ export const products: Product[] = [
     marca: 'Roland',
     precio: 329999,
     stock: 4,
-    img: 'https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?w=500',
+    img: '',
     categoria: 'Teclados y pianos'
   },
   {
@@ -123,7 +123,7 @@ export const products: Product[] = [
     marca: 'Yamaha',
     precio: 195000,
     stock: 6,
-    img: 'https://images.unsplash.com/photo-1552422535-c45813c61732?w=500',
+    img: '',
     categoria: 'Teclados y pianos'
   },
   {
@@ -132,7 +132,7 @@ export const products: Product[] = [
     marca: 'Korg',
     precio: 210000,
     stock: 5,
-    img: 'https://images.unsplash.com/photo-1612415177114-99edff2f3102?w=500',
+    img: '',
     categoria: 'Teclados y pianos'
   },
   {
@@ -141,7 +141,7 @@ export const products: Product[] = [
     marca: 'Nord',
     precio: 750000,
     stock: 1,
-    img: 'https://images.unsplash.com/photo-1598653222000-6b7b7a552625?w=500',
+    img: '',
     categoria: 'Teclados y pianos'
   },
   {
@@ -150,7 +150,7 @@ export const products: Product[] = [
     marca: 'Pearl',
     precio: 198500,
     stock: 2,
-    img: 'https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?w=500',
+    img: '',
     categoria: 'Baterías y percusión'
   },
   {
@@ -159,7 +159,7 @@ export const products: Product[] = [
     marca: 'Yamaha',
     precio: 310000,
     stock: 3,
-    img: 'https://images.unsplash.com/photo-1602161961448-f3d99e5a1b32?w=500',
+    img: '',
     categoria: 'Baterías y percusión'
   },
   {
@@ -168,7 +168,7 @@ export const products: Product[] = [
     marca: 'Mapex',
     precio: 165000,
     stock: 4,
-    img: 'https://images.unsplash.com/photo-1543443374-b6fe10a6ab7b?w=500',
+    img: '',
     categoria: 'Baterías y percusión'
   },
   {
@@ -177,7 +177,7 @@ export const products: Product[] = [
     marca: 'Roland',
     precio: 450000,
     stock: 2,
-    img: 'https://images.unsplash.com/photo-1566120536446-aa4933923bb1?w=500',
+    img: '',
     categoria: 'Baterías y percusión'
   },
   {
@@ -186,7 +186,7 @@ export const products: Product[] = [
     marca: 'Alesis',
     precio: 115000,
     stock: 6,
-    img: 'https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?w=500',
+    img: '',
     categoria: 'Baterías y percusión'
   },
   {
@@ -195,7 +195,7 @@ export const products: Product[] = [
     marca: 'Yamaha',
     precio: 124000,
     stock: 6,
-    img: 'https://images.unsplash.com/photo-1511192336575-5a79af67a629?w=500',
+    img: '',
     categoria: 'Audio y grabación'
   },
   {
@@ -204,7 +204,7 @@ export const products: Product[] = [
     marca: 'Shure',
     precio: 45000,
     stock: 15,
-    img: 'https://images.unsplash.com/photo-1551817876-0bf1453ef1aa?w=500',
+    img: '',
     categoria: 'Audio y grabación'
   },
   {
@@ -213,7 +213,7 @@ export const products: Product[] = [
     marca: 'Shure',
     precio: 42000,
     stock: 18,
-    img: 'https://images.unsplash.com/photo-1516280440614-37939bbacd6a?w=500',
+    img: '',
     categoria: 'Audio y grabación'
   },
   {
@@ -222,7 +222,7 @@ export const products: Product[] = [
     marca: 'Audio-Technica',
     precio: 52000,
     stock: 10,
-    img: 'https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=500',
+    img: '',
     categoria: 'Audio y grabación'
   },
   {
@@ -231,7 +231,7 @@ export const products: Product[] = [
     marca: 'Focusrite',
     precio: 89000,
     stock: 8,
-    img: 'https://images.unsplash.com/photo-1616149562385-1d84e79478bb?w=500',
+    img: '',
     categoria: 'Audio y grabación'
   },
   {
@@ -240,7 +240,7 @@ export const products: Product[] = [
     marca: 'Focusrite',
     precio: 64000,
     stock: 11,
-    img: 'https://images.unsplash.com/photo-1616149562385-1d84e79478bb?w=500',
+    img: '',
     categoria: 'Audio y grabación'
   },
   {
@@ -249,7 +249,7 @@ export const products: Product[] = [
     marca: 'KRK',
     precio: 175000,
     stock: 4,
-    img: 'https://images.unsplash.com/photo-1615671524827-c1fe3973b648?w=500',
+    img: '',
     categoria: 'Audio y grabación'
   },
   {
@@ -258,7 +258,7 @@ export const products: Product[] = [
     marca: 'Yamaha',
     precio: 198000,
     stock: 3,
-    img: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?w=500',
+    img: '',
     categoria: 'Audio y grabación'
   },
   {
@@ -267,7 +267,7 @@ export const products: Product[] = [
     marca: 'Sennheiser',
     precio: 72000,
     stock: 9,
-    img: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=500',
+    img: '',
     categoria: 'Audio y grabación'
   },
   {
@@ -276,7 +276,7 @@ export const products: Product[] = [
     marca: 'Audio-Technica',
     precio: 85000,
     stock: 7,
-    img: 'https://images.unsplash.com/photo-1583394838336-acd977736f90?w=500',
+    img: '',
     categoria: 'Audio y grabación'
   }
 ];
