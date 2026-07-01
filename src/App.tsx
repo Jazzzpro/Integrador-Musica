@@ -3,6 +3,7 @@ import { CarritoProvider, useCarritoContext } from "./context/CartContext.tsx";
 import Home from "./Components/Home.tsx";
 import Cart from "./Components/Cart";
 import  Contact from "./Components/Contact";
+import Products from "./Components/Products.tsx";
 
 const NavBar = () => {
   const { getItemQuantity } = useCarritoContext();
@@ -13,7 +14,7 @@ const NavBar = () => {
       <div className="d-flex gap-3">
         <Link className="nav-link text-white" to="/">Inicio</Link>
         <Link className="nav-link text-white" to="/contact">Contactos</Link>
-        <Link className="nav-link text-white" to="/about">Productos</Link>
+        <Link className="nav-link text-white" to="/products">Productos</Link>
         <Link className="nav-link text-white position-relative" to="/cart">
           🛒 Carrito
           {getItemQuantity() > 0 && (
@@ -33,6 +34,7 @@ const App = () => {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/products" element={<Products />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
