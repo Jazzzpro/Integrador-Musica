@@ -4,6 +4,8 @@ import Home from "./Components/Home.tsx";
 import Cart from "./Components/Cart";
 import  Contact from "./Components/Contact";
 import Products from "./Components/Products.tsx";
+import Header from "./Components/Header.tsx";
+import './App.css';
 
 const NavBar = () => {
   const { getItemQuantity } = useCarritoContext();
@@ -33,6 +35,8 @@ const App = () => {
     <CarritoProvider>
       <NavBar />
       <Routes>
+        <Header />
+        <Home />
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
         <Route path="/cart" element={<Cart />} />

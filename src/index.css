@@ -1,0 +1,229 @@
+:root {
+  --naranja: #E8743A;
+  --dorado: #F0C685;
+  --rosa: #F2C2DD;
+  --violeta: #8B7FEA;
+  --violeta-oscuro: #1A0F3A; /* Ajustado para que el contraste sea idéntico al fondo del boceto */
+  --fondo: #0B051E;          /* Un tono más oscuro para el fondo general del layout */
+  --fondo2: #160D33;         /* Fondo de los inputs y botones */
+  --borde: rgba(139, 127, 234, 0.15);
+  --texto: #FFFFFF;
+  --texto-suave: #8375A3;    /* El color gris/violeta apagado de las opciones no activas */
+}
+
+header {
+  background: #0B051E; /* Fondo oscuro puro del boceto */
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  width: 100%;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 16px 40px;
+}
+
+/* --- LOGO Y MARCA --- */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: #6E5FD8; /* Violeta plano característico de tu logo en el boceto */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.brand-text h1 {
+  font-size: 22px;
+  color: var(--texto);
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.brand-text span {
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: var(--texto-suave);
+  text-transform: uppercase;
+  display: block;
+  margin-top: 2px;
+}
+
+/* --- ENLACES PRINCIPALES --- */
+.main-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.main-links a {
+  color: var(--texto-suave);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color .15s ease;
+}
+
+.main-links a.active {
+  color: var(--violeta); /* En el boceto "Inicio" es violeta brillante */
+  font-weight: 600;
+}
+
+.main-links a:hover {
+  color: var(--texto);
+}
+
+/* --- ACCIONES DERECHA & BUSCADOR --- */
+.right-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-grow: 1; /* Permite que el buscador gane terreno */
+  justify-content: flex-end;
+  max-width: 600px; /* Evita que se estire al infinito en pantallas gigantes */
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--fondo2);
+  border: 1px solid var(--borde);
+  border-radius: 12px;
+  padding: 10px 16px;
+  flex-grow: 1; /* Hace que ocupe todo el espacio central dinámicamente */
+  max-width: 380px;
+}
+
+.search-box input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--texto);
+  font-size: 14px;
+  width: 100%;
+}
+
+.search-box input::placeholder {
+  color: #554875; /* Más oscuro para que no compita con el texto */
+}
+
+.search-box svg {
+  flex-shrink: 0;
+  stroke: var(--texto-suave);
+}
+
+.icon-btn {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: var(--fondo2);
+  border: 1px solid var(--borde);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--texto-suave);
+  transition: color 0.2s;
+}
+
+.icon-btn:hover {
+  color: var(--texto);
+}
+
+.badge {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: var(--naranja);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #6E5FD8; /* Violeta a juego con el sistema en la esquina superior */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 12px;
+  color: #FFF;
+  cursor: pointer;
+}
+
+/* --- BARRA DE CATEGORÍAS (SEGUNDO NIVEL) --- */
+.categories {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 40px;
+  overflow-x: auto;
+  background: #0B051E;
+}
+
+/* Ocultar barra de scroll para estética limpia */
+.categories::-webkit-scrollbar {
+  display: none;
+}
+
+.categories a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--texto-suave);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 20px; /* Formato de pastilla del boceto */
+  transition: all .2s ease;
+}
+
+.categories a.active {
+  color: #FFFFFF;
+  background: rgba(110, 95, 216, 0.2); /* Fondo sutil violeta para el botón activo 'Todos' */
+  font-weight: 600;
+}
+
+.categories a:hover {
+  color: var(--texto);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 1024px) {
+  .top-bar { padding: 16px 24px; gap: 20px; }
+  .categories { padding: 8px 24px; }
+}
+
+@media (max-width: 850px) {
+  .top-bar { flex-wrap: wrap; }
+  .main-links { order: 3; width: 100%; justify-content: flex-start; margin-top: 4px; }
+  .right-actions { width: 100%; max-width: none; }
+  .search-box { max-width: none; }
+}
