@@ -1,34 +1,30 @@
+import { Link } from 'react-router-dom';
+import { useCarritoContext } from '../context/CartContext.tsx';
 import './Header.css';
 
 export default function Header() {
+  const { getItemQuantity } = useCarritoContext();
+
   return (
     <header>
-      {/* Barra superior principal */}
-      <div className="top-bar">
-        
-        {/* Logo / Identidad */}
-        <div className="brand">
-          <div className="logo-icon">♫</div>
-          <div className="brand-text">
+      <div className="barra-superior">
+
+        <div className="logo-marca">
+          <div className="icono-logo">♫</div>
+          <div className="texto-marca">
             <h1>Al Palo</h1>
-            <span>INSTRUMENTOS - AR</span>
+            <span>en donde la musica se escucha al palo</span>
           </div>
         </div>
 
-        {/* Enlaces de Navegación Centrales */}
-        <nav className="main-links">
-          <a href="#" className="active">Inicio</a>
-          <a href="#">Ofertas</a>
-          <a href="#">Novedades</a>
-          <a href="#">Marcas</a>
-          <a href="#">Blog</a>
-        </nav>
+        <div className="acciones">
+          <nav className="navegacion">
+            <Link to="/" className="active">Inicio</Link>
+            <Link to="/products">Productos</Link>
+            <Link to="/contact">Contacto</Link>
+          </nav>
 
-        {/* Acciones de la Derecha (Buscador, Carrito y Perfil) */}
-        <div className="right-actions">
-          
-          {/* Caja de Búsqueda que se expande según el boceto */}
-          <div className="search-box">
+          <div className="buscador">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <circle cx="11" cy="11" r="8" />
               <line x1="21" y1="21" x2="16.65" y2="16.65" />
@@ -36,31 +32,18 @@ export default function Header() {
             <input type="text" placeholder="Buscar instrumentos..." />
           </div>
 
-          {/* Botón del Carrito con el Badge de notificación */}
-          <div className="icon-btn">
+          <Link to="/cart" className="boton-carrito">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <circle cx="9" cy="21" r="1" />
               <circle cx="20" cy="21" r="1" />
               <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
             </svg>
-            <span className="badge">3</span>
-          </div>
-
-          {/* Avatar de Usuario (JZ) con el mismo color violeta plano */}
-          <div className="avatar">JZ</div>
+            {getItemQuantity() > 0 && (
+              <span className="contador">{getItemQuantity()}</span>
+            )}
+          </Link>
         </div>
-      </div>
 
-      {/* Barra secundaria de Categorías con formato de botones/pastillas */}
-      <div className="categories">
-        <a href="#" className="active">▦ Todos</a>
-        <a href="#">🛡 Guitarras</a>
-        <a href="#">🎚 Bajos</a>
-        <a href="#">🎹 Teclados</a>
-        <a href="#">🥁 Batería</a>
-        <a href="#">🎧 Audio</a>
-        <a href="#">🎙 Grabación</a>
-        <a href="#">Cuerdas</a>
       </div>
     </header>
   );
