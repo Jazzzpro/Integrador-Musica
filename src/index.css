@@ -227,3 +227,14 @@ header {
   .right-actions { width: 100%; max-width: none; }
   .search-box { max-width: none; }
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--fondo);
+  color: var(--texto);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
