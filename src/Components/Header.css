@@ -1,0 +1,164 @@
+header {
+  background: var(--fondo);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  width: 100%;
+}
+
+.barra-superior {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 40px;
+  gap: 32px;
+}
+
+.logo-marca {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.icono-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: #6E5FD8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #fff;
+}
+
+.texto-marca h1 {
+  font-size: 22px;
+  color: var(--texto);
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.texto-marca span {
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: var(--texto-suave);
+  text-transform: uppercase;
+  display: block;
+  margin-top: 2px;
+}
+
+.acciones {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.navegacion {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navegacion a {
+  color: var(--texto-suave);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color .15s ease;
+}
+
+.navegacion a.active {
+  color: var(--violeta);
+  font-weight: 600;
+}
+
+.navegacion a:hover {
+  color: var(--texto);
+}
+
+.buscador {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--fondo2);
+  border: 1px solid var(--borde);
+  border-radius: 12px;
+  padding: 10px 16px;
+  width: 280px;
+}
+
+.buscador input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--texto);
+  font-size: 14px;
+  width: 100%;
+}
+
+.buscador input::placeholder {
+  color: #554875;
+}
+
+.buscador svg {
+  flex-shrink: 0;
+  stroke: var(--texto-suave);
+}
+
+.boton-carrito {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: var(--fondo2);
+  border: 1px solid var(--borde);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--texto-suave);
+  transition: color 0.2s;
+}
+
+.boton-carrito:hover {
+  color: var(--texto);
+}
+
+.contador {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: var(--naranja);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 850px) {
+  .barra-superior {
+    flex-wrap: wrap;
+    padding: 12px 16px;
+  }
+
+  .acciones {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .navegacion {
+    width: 100%;
+  }
+
+  .buscador {
+    flex: 1;
+    width: auto;
+  }
+}
