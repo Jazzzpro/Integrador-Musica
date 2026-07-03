@@ -1,3 +1,6 @@
+
+
+
 export interface Product {
   id: number;
   nombre: string;
@@ -15,7 +18,7 @@ export const productos: Product[] = [
     marca: 'Fender',
     precio: 289999,
     stock: 5,
-    img: '',
+    img: '/public/images/Fender Stratocaster American Professional II.png',
     categoria: 'Guitarras eléctricas'
   },
   {
@@ -24,7 +27,7 @@ export const productos: Product[] = [
     marca: 'Gibson',
     precio: 415000,
     stock: 3,
-    img: '',
+    img: '/public/images/Gibson Les Paul Standard 60s.png',
     categoria: 'Guitarras eléctricas'
   },
   {
@@ -33,7 +36,7 @@ export const productos: Product[] = [
     marca: 'Fender',
     precio: 245000,
     stock: 4,
-    img: '',
+    img: '/public/images/Fender Jazz Bass American Professional II.png',
     categoria: 'Bajos eléctricos'
   },
   {
@@ -42,7 +45,7 @@ export const productos: Product[] = [
     marca: 'Gibson',
     precio: 380000,
     stock: 2,
-    img: '',
+    img: '/public/images/Gibson SG Standard Heritage Cherry.png',
     categoria: 'Guitarras eléctricas'
   },
   {
@@ -51,7 +54,7 @@ export const productos: Product[] = [
     marca: 'Epiphone',
     precio: 135000,
     stock: 6,
-    img: '',
+    img: '/public/images/Epiphone Les Paul Custom.png',
     categoria: 'Guitarras eléctricas'
   },
   {
@@ -60,7 +63,7 @@ export const productos: Product[] = [
     marca: 'Ibanez',
     precio: 95000,
     stock: 5,
-    img: '',
+    img: '/public/images/Ibanez RG421EX.png',
     categoria: 'Guitarras eléctricas'
   },
   {
@@ -69,7 +72,7 @@ export const productos: Product[] = [
     marca: 'Fender',
     precio: 65000,
     stock: 8,
-    img: '',
+    img: '/public/images/Fender CD-60S Dreadnought.png',
     categoria: 'Guitarras acústicas'
   },
   {
@@ -78,7 +81,7 @@ export const productos: Product[] = [
     marca: 'Yamaha',
     precio: 38000,
     stock: 12,
-    img: '',
+    img: '/public/images/Yamaha C40 Guitarra Clásica.png',
     categoria: 'Guitarras acústicas'
   },
   {
@@ -87,7 +90,7 @@ export const productos: Product[] = [
     marca: 'Taylor',
     precio: 210000,
     stock: 3,
-    img: '',
+    img: '/public/images/Taylor 114ce Acoustic-Electric.png',
     categoria: 'Guitarras acústicas'
   },
   {
@@ -96,7 +99,7 @@ export const productos: Product[] = [
     marca: 'Yamaha',
     precio: 78000,
     stock: 7,
-    img: '',
+    img: '/public/images/Yamaha TRBX174 Black.png',
     categoria: 'Bajos eléctricos'
   },
   {
