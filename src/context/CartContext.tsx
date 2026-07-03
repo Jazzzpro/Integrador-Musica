@@ -41,22 +41,24 @@ export const CarritoProvider = ({ children }: { children: React.ReactNode }) => 
 
 
  // Agrega o actualiza la cantidad de un producto en el carrito
- const addToCart = (product: Product, quantity: number): void => {
-   if (quantity > product.stock) {    // Validación de stock primero
-       return console.warn('No hay stock suficiente')
-   }
+const addToCart = (product: Product, quantity: number): void => {
+  if (quantity <= 0) return console.warn('Cantidad inválida')
 
+  const idProd = carrito.findIndex(p => p.id === product.id)
+  const cantidadEnCarrito = isInCart(product.id) ? carrito[idProd].quantity : 0
 
-   const idProd = carrito.findIndex(p => p.id === product.id) // Busca el índice del producto
+  // Valida que la cantidad nueva no supere el stock disponible
+  if (quantity > product.stock - cantidadEnCarrito) {
+    return console.warn('No hay stock suficiente')
+  }
 
-
-   if (isInCart(product.id)) {        // Si ya está en carrito, actualizo la cantidad
-       const aux = [...carrito]
-       aux[idProd] = { ...aux[idProd], quantity }
-       setCarrito(aux)
-   } else {                           // Si no está, lo agrego con el operador spread
-       setCarrito(aux => [...aux, { ...product, quantity }])
-   }
+  if (isInCart(product.id)) {
+    const aux = [...carrito]
+    aux[idProd] = { ...aux[idProd], quantity: cantidadEnCarrito + quantity }
+    setCarrito(aux)
+  } else {
+    setCarrito(aux => [...aux, { ...product, quantity }])
+  }
 }
  
  // Elimina un producto del carrito por id

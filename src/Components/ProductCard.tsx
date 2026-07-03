@@ -47,7 +47,7 @@ const ProductCard = ({ product }: { product: Product }) => {
             onClick={handleAdd}
             disabled={product.stock === 0}
           >
-            {added ? "✓" : "Agregar"}
+            {added ? "✓" : "🛒"}
           </button>
         </div>
       </div>

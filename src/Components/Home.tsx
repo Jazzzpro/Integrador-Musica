@@ -1,4 +1,5 @@
 import ProductList from "./ProductList.tsx";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -28,7 +29,7 @@ const Home = () => {
             </div>
           </div>
           <div className="carousel-item">
-            <img src="https://images.unsplash.com/photo-1519892300165-cca95d33d18d?w=1200" className="d-block w-100 carrusel-img" alt="Baterías" />
+            <img src="/public/baterias.jpg" className="d-block w-100 carrusel-img" alt="Baterías" />
             <div className="carousel-caption">
               <h2>Baterías</h2>
               <p>Sentí el ritmo</p>
@@ -45,9 +46,12 @@ const Home = () => {
       </div>
 
       <div className="container py-4">
-        <ProductList />
+        <ProductList limit={10} />
       </div>
-
+      <div className="text-center mt-4">
+          <Link to="/products" className="btn btn-primary btn-lg">Ver todos los productos</Link>
+        </div>
+      
     </div>
   );
 };

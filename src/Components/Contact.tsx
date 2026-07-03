@@ -18,6 +18,7 @@ const Contact = () => {
   return (
     <div className="container py-4" style={{ maxWidth: 600 }}>
       <h2 className="mb-4">Contacto</h2>
+      <p>Si tienes alguna consulta o comentario, no dudes en enviarnos un mensaje a través del siguiente formulario:</p>
       {sent && <div className="alert alert-success">¡Mensaje enviado!</div>}
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
