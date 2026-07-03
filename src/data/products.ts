@@ -36,7 +36,7 @@ export const productos: Product[] = [
     marca: 'Fender',
     precio: 245000,
     stock: 4,
-    img: '/public/images/Fender Jazz Bass American Professional II.png',
+    img: '/public/images/Fender Jazz Bass American Professional II (completo).png',
     categoria: 'Bajos eléctricos'
   },
   {
@@ -90,7 +90,7 @@ export const productos: Product[] = [
     marca: 'Taylor',
     precio: 210000,
     stock: 3,
-    img: '/public/images/Taylor 114ce Acoustic-Electric.png',
+    img: '/public/images',
     categoria: 'Guitarras acústicas'
   },
   {
@@ -99,7 +99,7 @@ export const productos: Product[] = [
     marca: 'Yamaha',
     precio: 78000,
     stock: 7,
-    img: '/public/images/Yamaha TRBX174 Black.png',
+    img: '',
     categoria: 'Bajos eléctricos'
   },
   {
