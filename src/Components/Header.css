@@ -15,20 +15,24 @@ header {
 .logo-marca {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 12px; 
   flex-shrink: 0;
 }
-
 .icono-logo {
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
-  background: #6E5FD8;
+  width: 40px;
+  height: 40px;
+  border-radius: 1px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 18px;
   color: #fff;
+}
+.icono-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
 }
 
 .texto-marca h1 {
@@ -77,35 +81,6 @@ header {
 
 .navegacion a:hover {
   color: var(--texto);
-}
-
-.buscador {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background: var(--fondo2);
-  border: 1px solid var(--borde);
-  border-radius: 12px;
-  padding: 10px 16px;
-  width: 280px;
-}
-
-.buscador input {
-  background: transparent;
-  border: none;
-  outline: none;
-  color: var(--texto);
-  font-size: 14px;
-  width: 100%;
-}
-
-.buscador input::placeholder {
-  color: #554875;
-}
-
-.buscador svg {
-  flex-shrink: 0;
-  stroke: var(--texto-suave);
 }
 
 .boton-carrito {

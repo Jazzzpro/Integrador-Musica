@@ -1,0 +1,155 @@
+.carta {
+  background: var(--fondo2);
+  border: 1px solid var(--borde);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.carta:hover {
+  transform: translateY(-6px);
+  border-color: var(--violeta);
+}
+
+/* Imagen grande arriba */
+.carta__imagen {
+  width: 100%;
+  height: 200px;
+  background: #1e1433;
+  overflow: hidden;
+}
+
+.carta__imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.carta:hover .carta__imagen img {
+  transform: scale(1.05);
+}
+
+/* Info debajo */
+.carta__info {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.carta__marca {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--violeta);
+  background: rgba(139, 127, 234, 0.12);
+  padding: 3px 10px;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.carta__nombre {
+  color: var(--texto);
+  font-size: 15px;
+  font-weight: 700;
+  margin: 4px 0 0;
+  line-height: 1.3;
+}
+
+.carta__stock {
+  font-size: 12px;
+  margin: 0;
+}
+
+.carta__stock--ok  { color: #4ade80; }
+.carta__stock--bajo { color: #f87171; }
+
+/* Pie: precio + botón en la misma fila */
+.carta__pie {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 12px;
+}
+
+.carta__precio-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.carta__precio {
+  color: var(--texto);
+  font-size: 18px;
+  font-weight: 800;
+}
+
+/* Selector de cantidad estilo +/- */
+.carta__cantidad-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--fondo);
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+  padding: 4px 8px;
+  width: fit-content;
+}
+
+.carta__cantidad-wrap button {
+  background: none;
+  border: none;
+  color: var(--texto-suave);
+  font-size: 16px;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0 2px;
+  transition: color 0.15s;
+}
+
+.carta__cantidad-wrap button:hover {
+  color: var(--violeta);
+}
+
+.carta__cantidad-wrap span {
+  color: var(--texto);
+  font-size: 14px;
+  font-weight: 600;
+  min-width: 16px;
+  text-align: center;
+}
+
+.carta__boton {
+  background: var(--violeta);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px 18px;
+  transition: background 0.2s ease, transform 0.1s ease;
+  white-space: nowrap;
+}
+
+.carta__boton:hover {
+  background: #7a6fd8;
+  transform: scale(1.03);
+}
+
+.carta__boton--agregado {
+  background: #4ade80;
+  color: #0B051E;
+}
+
+.carta__boton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

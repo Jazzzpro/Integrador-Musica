@@ -3,12 +3,12 @@
   --dorado: #F0C685;
   --rosa: #F2C2DD;
   --violeta: #8B7FEA;
-  --violeta-oscuro: #1A0F3A; /* Ajustado para que el contraste sea idéntico al fondo del boceto */
-  --fondo: #0B051E;          /* Un tono más oscuro para el fondo general del layout */
-  --fondo2: #160D33;         /* Fondo de los inputs y botones */
+  --violeta-oscuro: #1A0F3A; 
+  --fondo: #0B051E;       
+  --fondo2: #160D33;
   --borde: rgba(139, 127, 234, 0.15);
   --texto: #FFFFFF;
-  --texto-suave: #8375A3;    /* El color gris/violeta apagado de las opciones no activas */
+  --texto-suave: #8375A3;
 }
 
 header {
@@ -36,7 +36,7 @@ header {
   width: 36px;
   height: 36px;
   border-radius: 10px;
-  background: #6E5FD8; /* Violeta plano característico de tu logo en el boceto */
+  background: #6E5FD8;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,7 +63,6 @@ header {
   margin-top: 2px;
 }
 
-/* --- ENLACES PRINCIPALES --- */
 .main-links {
   display: flex;
   align-items: center;
@@ -79,7 +78,7 @@ header {
 }
 
 .main-links a.active {
-  color: var(--violeta); /* En el boceto "Inicio" es violeta brillante */
+  color: var(--violeta); 
   font-weight: 600;
 }
 
@@ -87,14 +86,13 @@ header {
   color: var(--texto);
 }
 
-/* --- ACCIONES DERECHA & BUSCADOR --- */
 .right-actions {
   display: flex;
   align-items: center;
   gap: 16px;
-  flex-grow: 1; /* Permite que el buscador gane terreno */
+  flex-grow: 1; 
   justify-content: flex-end;
-  max-width: 600px; /* Evita que se estire al infinito en pantallas gigantes */
+  max-width: 600px;
 }
 
 .search-box {
@@ -105,7 +103,7 @@ header {
   border: 1px solid var(--borde);
   border-radius: 12px;
   padding: 10px 16px;
-  flex-grow: 1; /* Hace que ocupe todo el espacio central dinámicamente */
+  flex-grow: 1;
   max-width: 380px;
 }
 
@@ -119,7 +117,7 @@ header {
 }
 
 .search-box input::placeholder {
-  color: #554875; /* Más oscuro para que no compita con el texto */
+  color: #554875; 
 }
 
 .search-box svg {
@@ -166,7 +164,7 @@ header {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: #6E5FD8; /* Violeta a juego con el sistema en la esquina superior */
+  background: #6E5FD8; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -176,7 +174,6 @@ header {
   cursor: pointer;
 }
 
-/* --- BARRA DE CATEGORÍAS (SEGUNDO NIVEL) --- */
 .categories {
   display: flex;
   align-items: center;
@@ -186,7 +183,6 @@ header {
   background: #0B051E;
 }
 
-/* Ocultar barra de scroll para estética limpia */
 .categories::-webkit-scrollbar {
   display: none;
 }
@@ -200,13 +196,13 @@ header {
   font-size: 13px;
   font-weight: 500;
   padding: 6px 14px;
-  border-radius: 20px; /* Formato de pastilla del boceto */
+  border-radius: 20px;
   transition: all .2s ease;
 }
 
 .categories a.active {
   color: #FFFFFF;
-  background: rgba(110, 95, 216, 0.2); /* Fondo sutil violeta para el botón activo 'Todos' */
+  background: rgba(110, 95, 216, 0.2); 
   font-weight: 600;
 }
 
@@ -237,4 +233,8 @@ body {
   background: var(--fondo);
   color: var(--texto);
   font-family: 'Segoe UI', system-ui, sans-serif;
+}
+.carrusel-img {
+  height: 400px;
+  object-fit: cover;
 }

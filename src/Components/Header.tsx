@@ -10,10 +10,12 @@ export default function Header() {
       <div className="barra-superior">
 
         <div className="logo-marca">
-          <div className="icono-logo">♫</div>
+          <div className="icono-logo">
+            <img src="/public/images/logo.png" alt="Logo de la tienda" />
+          </div>
           <div className="texto-marca">
             <h1>Al Palo</h1>
-            <span>en donde la musica se escucha al palo</span>
+            <span>Tienda de Instrumentos musicales</span>
           </div>
         </div>
 
@@ -23,14 +25,6 @@ export default function Header() {
             <Link to="/products">Productos</Link>
             <Link to="/contact">Contacto</Link>
           </nav>
-
-          <div className="buscador">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="11" cy="11" r="8" />
-              <line x1="21" y1="21" x2="16.65" y2="16.65" />
-            </svg>
-            <input type="text" placeholder="Buscar instrumentos..." />
-          </div>
 
           <Link to="/cart" className="boton-carrito">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

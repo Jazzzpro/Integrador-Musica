@@ -10,7 +10,6 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Acá podrían integrar un envío real (API, EmailJS, etc.)
     console.log(form);
     setSent(true);
     setForm({ nombre: "", email: "", mensaje: "" });
