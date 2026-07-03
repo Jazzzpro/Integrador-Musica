@@ -36,7 +36,7 @@ export const productos: Product[] = [
     marca: 'Fender',
     precio: 245000,
     stock: 4,
-    img: '/public/images/Fender Jazz Bass American Professional II (completo).png',
+    img: '/public/images/Fender Jazz Bass American Professional II.png',
     categoria: 'Bajos eléctricos'
   },
   {
@@ -90,7 +90,7 @@ export const productos: Product[] = [
     marca: 'Taylor',
     precio: 210000,
     stock: 3,
-    img: '/public/images',
+    img: '/public/images/Taylor 114ce Acoustic-Electric.png',
     categoria: 'Guitarras acústicas'
   },
   {
@@ -99,7 +99,7 @@ export const productos: Product[] = [
     marca: 'Yamaha',
     precio: 78000,
     stock: 7,
-    img: '',
+    img: '/public/images/Yamaha TRBX174 Black.png',
     categoria: 'Bajos eléctricos'
   },
   {
@@ -108,7 +108,7 @@ export const productos: Product[] = [
     marca: 'Music Man',
     precio: 340000,
     stock: 2,
-    img: '',
+    img: '/public/images/Music Man StingRay Special.png',
     categoria: 'Bajos eléctricos'
   },
   {
@@ -117,7 +117,7 @@ export const productos: Product[] = [
     marca: 'Roland',
     precio: 329999,
     stock: 4,
-    img: '',
+    img: '/public/images/Roland FP-30X Piano Digital.png',
     categoria: 'Teclados y pianos'
   },
   {
@@ -126,7 +126,7 @@ export const productos: Product[] = [
     marca: 'Yamaha',
     precio: 195000,
     stock: 6,
-    img: '',
+    img: '/public/images/Yamaha P-45 Piano Digital.png',
     categoria: 'Teclados y pianos'
   },
   {
@@ -135,7 +135,7 @@ export const productos: Product[] = [
     marca: 'Korg',
     precio: 210000,
     stock: 5,
-    img: '',
+    img: '/public/images/Korg Minilogue XD Sintetizador.png',
     categoria: 'Teclados y pianos'
   },
   {
@@ -144,7 +144,7 @@ export const productos: Product[] = [
     marca: 'Nord',
     precio: 750000,
     stock: 1,
-    img: '',
+    img: '/public/images/Nord Stage 4 88.png',
     categoria: 'Teclados y pianos'
   },
   {
@@ -153,7 +153,7 @@ export const productos: Product[] = [
     marca: 'Pearl',
     precio: 198500,
     stock: 2,
-    img: '',
+    img: '/public/images/Pearl Export EXX 5 Piezas Nitro.png',
     categoria: 'Baterías y percusión'
   },
   {
@@ -162,7 +162,7 @@ export const productos: Product[] = [
     marca: 'Yamaha',
     precio: 310000,
     stock: 3,
-    img: '',
+    img: '/public/images/Yamaha Stage Custom Birch.png',
     categoria: 'Baterías y percusión'
   },
   {
@@ -171,7 +171,7 @@ export const productos: Product[] = [
     marca: 'Mapex',
     precio: 165000,
     stock: 4,
-    img: '',
+    img: '/public/images/Mapex Mars Birch 5 Cuerpos.png',
     categoria: 'Baterías y percusión'
   },
   {
@@ -180,7 +180,7 @@ export const productos: Product[] = [
     marca: 'Roland',
     precio: 450000,
     stock: 2,
-    img: '',
+    img: '/public/images/Roland TD-17KVX V-Drums.png',
     categoria: 'Baterías y percusión'
   },
   {
@@ -189,7 +189,7 @@ export const productos: Product[] = [
     marca: 'Alesis',
     precio: 115000,
     stock: 6,
-    img: '',
+    img: '/public/images/Alesis Nitro Max Kit.png',
     categoria: 'Baterías y percusión'
   },
   {
@@ -198,7 +198,7 @@ export const productos: Product[] = [
     marca: 'Yamaha',
     precio: 124000,
     stock: 6,
-    img: '',
+    img: '/public/images/Yamaha YTR-2330 Trompeta Bb.png',
     categoria: 'Audio y grabación'
   },
   {
@@ -207,7 +207,7 @@ export const productos: Product[] = [
     marca: 'Shure',
     precio: 45000,
     stock: 15,
-    img: '',
+    img: '/public/images/Shure SM58 Micrófono Vocal.png',
     categoria: 'Audio y grabación'
   },
   {
@@ -216,7 +216,7 @@ export const productos: Product[] = [
     marca: 'Shure',
     precio: 42000,
     stock: 18,
-    img: '',
+    img: '/public/images/Shure SM57 Micrófono de Instrumento.png',
     categoria: 'Audio y grabación'
   },
   {
@@ -225,7 +225,7 @@ export const productos: Product[] = [
     marca: 'Audio-Technica',
     precio: 52000,
     stock: 10,
-    img: '',
+    img: '/public/images/Audio-Technica AT2020.png',
     categoria: 'Audio y grabación'
   },
   {
@@ -234,7 +234,7 @@ export const productos: Product[] = [
     marca: 'Focusrite',
     precio: 89000,
     stock: 8,
-    img: '',
+    img: '/public/images/Focusrite Scarlett 2i2 Gen 4.png',
     categoria: 'Audio y grabación'
   },
   {
@@ -243,7 +243,7 @@ export const productos: Product[] = [
     marca: 'Focusrite',
     precio: 64000,
     stock: 11,
-    img: '',
+    img: '/public/images/Focusrite Scarlett Solo Gen 4.png',
     categoria: 'Audio y grabación'
   },
   {
@@ -252,7 +252,7 @@ export const productos: Product[] = [
     marca: 'KRK',
     precio: 175000,
     stock: 4,
-    img: '',
+    img: '/public/images/KRK Rokit 5 G4 (Par).png',
     categoria: 'Audio y grabación'
   },
   {
@@ -261,7 +261,7 @@ export const productos: Product[] = [
     marca: 'Yamaha',
     precio: 198000,
     stock: 3,
-    img: '',
+    img: '/public/images/Yamaha HS5 Monitores de Estudio (Par).png',
     categoria: 'Audio y grabación'
   },
   {
@@ -270,7 +270,7 @@ export const productos: Product[] = [
     marca: 'Sennheiser',
     precio: 72000,
     stock: 9,
-    img: '',
+    img: '/public/images/Sennheiser HD 25 Auriculares Dj.png',
     categoria: 'Audio y grabación'
   },
   {
@@ -279,7 +279,7 @@ export const productos: Product[] = [
     marca: 'Audio-Technica',
     precio: 85000,
     stock: 7,
-    img: '',
+    img: '/public/images/Audio-Technica ATH-M50x.png',
     categoria: 'Audio y grabación'
   }
 ];

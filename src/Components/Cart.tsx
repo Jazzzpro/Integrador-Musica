@@ -4,24 +4,19 @@ import "./Cart.css";
 
 const Cart = () => {
   const { carrito, removeItem, emptyCart, getTotalPrice } = useCarritoContext();
-  
-  // 2. Estados para controlar el modal y el spinner de carga
+
   const [procesando, setProcesando] = useState(false);
   const [compraExitosa, setCompraExitosa] = useState(false);
 
   const formatPrice = (precio: number) =>
     new Intl.NumberFormat("es-AR", { style: "currency", currency: "ARS", maximumFractionDigits: 0 }).format(precio);
 
-  // 3. Función para manejar la acción de finalizar compra
   const handleCheckout = () => {
     setProcesando(true);
 
-    // Simulamos una petición al servidor/API de 3 segundos
     setTimeout(() => {
       setProcesando(false);
       setCompraExitosa(true);
-      
-      // Opcional: Aquí podrías vaciar el carrito después de unos segundos
       setTimeout(() => {
         emptyCart();
         setCompraExitosa(false);

@@ -12,45 +12,9 @@
 }
 
 header {
-  background: #0B051E;
+  background: var(--fondo);
   font-family: 'Segoe UI', system-ui, sans-serif;
   width: 100%;
-}
-
-.top-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 32px;
-  padding: 16px 40px;
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.logo-icon {
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
-  background: #6E5FD8;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  color: #fff;
-  flex-shrink: 0;
-}
-
-.brand-text h1 {
-  font-size: 22px;
-  color: var(--texto);
-  font-weight: 700;
-  line-height: 1;
-  margin: 0;
-  letter-spacing: -0.02em;
 }
 
 .brand-text span {
@@ -85,36 +49,6 @@ header {
   color: var(--texto);
 }
 
-.right-actions {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  flex-grow: 1; 
-  justify-content: flex-end;
-  max-width: 600px;
-}
-
-.search-box {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background: var(--fondo2);
-  border: 1px solid var(--borde);
-  border-radius: 12px;
-  padding: 10px 16px;
-  flex-grow: 1;
-  max-width: 380px;
-}
-
-.search-box input {
-  background: transparent;
-  border: none;
-  outline: none;
-  color: var(--texto);
-  font-size: 14px;
-  width: 100%;
-}
-
 .search-box input::placeholder {
   color: #554875; 
 }
@@ -123,65 +57,6 @@ header {
   flex-shrink: 0;
   stroke: var(--texto-suave);
 }
-
-.icon-btn {
-  position: relative;
-  width: 42px;
-  height: 42px;
-  border-radius: 12px;
-  background: var(--fondo2);
-  border: 1px solid var(--borde);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  color: var(--texto-suave);
-  transition: color 0.2s;
-}
-
-.icon-btn:hover {
-  color: var(--texto);
-}
-
-.badge {
-  position: absolute;
-  top: 4px;
-  right: 4px;
-  background: var(--naranja);
-  color: #fff;
-  font-size: 10px;
-  font-weight: 700;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.avatar {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: #6E5FD8; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  font-size: 12px;
-  color: #FFF;
-  cursor: pointer;
-}
-
-.categories {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 40px;
-  overflow-x: auto;
-  background: #0B051E;
-}
-
 .categories::-webkit-scrollbar {
   display: none;
 }

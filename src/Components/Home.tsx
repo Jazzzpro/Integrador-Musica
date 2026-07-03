@@ -15,21 +15,21 @@ const Home = () => {
 
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=1200" className="d-block w-100 carrusel-img" alt="Guitarras" />
+            <img src="/public/images/guitarra.jpg" className="d-block w-100 carrusel-img" alt="Guitarras" />
             <div className="carousel-caption">
               <h2>Guitarras</h2>
               <p>Las mejores marcas al mejor precio</p>
             </div>
           </div>
           <div className="carousel-item">
-            <img src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?w=1200" className="d-block w-100 carrusel-img" alt="Pianos" />
+            <img src="/public/images/teclado.jpg" className="d-block w-100 carrusel-img" alt="Pianos" />
             <div className="carousel-caption">
               <h2>Pianos y Teclados</h2>
               <p>Para principiantes y profesionales</p>
             </div>
           </div>
           <div className="carousel-item">
-            <img src="/public/baterias.jpg" className="d-block w-100 carrusel-img" alt="Baterías" />
+            <img src="/public/images/bateria.jpg" className="d-block w-100 carrusel-img" alt="Baterías" />
             <div className="carousel-caption">
               <h2>Baterías</h2>
               <p>Sentí el ritmo</p>

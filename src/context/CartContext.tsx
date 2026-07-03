@@ -1,4 +1,3 @@
-// CreateContext: contexto para el carrito. UseContext en componentes que lo necesiten.
 import { useState, createContext, useContext} from 'react'
 import type { Product } from '../data/products.ts' 
 
@@ -9,7 +8,6 @@ interface CarritoItem extends Product {
 }
 
 
-//Genero una interface del carrito para tipar el contexto, con las funciones que va a tener el carrito y el estado del mismo
 interface CarritoContextType {
  carrito: CarritoItem[]
  addToCart: (product: Product, quantity: number) => void

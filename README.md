@@ -1,75 +1,61 @@
-# React + TypeScript + Vite
+# Al Palo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ecommerce de instrumentos musicales hecho para el Trabajo Práctico Integrador N°1 de Desarrollo IV (React con TSX y UseContext).
 
-Currently, two official plugins are available:
+Integrantes: Jazmín Rodríguez, Tiziano Lopez y Joaquín Shugt.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Qué hace
 
-## React Compiler
+- Muestra un catálogo de instrumentos (guitarras, bajos, teclados, baterías, audio) con imagen, marca, precio y stock.
+- Se puede elegir la cantidad y agregar productos al carrito.
+- El carrito muestra los productos agregados, el subtotal de cada uno y el total. Se pueden sacar productos o vaciar todo.
+- Tiene un botón de "Finalizar compra" que simula el pedido y muestra un cartelito de compra exitosa.
+- Página de contacto con un formulario (nombre, mail y mensaje).
+- El carrito se maneja con Context API (CartContext) para que cualquier componente pueda acceder sin pasar props de un lado a otro.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologías
 
-## Expanding the ESLint configuration
+- React + TypeScript (TSX)
+- Vite
+- React Router DOM
+- Bootstrap
+- Context API / useContext
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Cómo correrlo
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Clonar el repo y entrar a la carpeta:
 
 ```
+git clone https://github.com/Jazzzpro/Integrador-Musica.git
+cd Integrador-Musica
+```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Instalar las dependencias:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```
+npm install
+```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Levantar el modo desarrollo:
 
+```
+npm run dev
+```
+
+Esto abre el proyecto en `http://localhost:5173` (o el puerto que muestre la consola).
+
+Para generar el build de producción:
+
+```
+npm run build
+```
+
+## Estructura
+
+```
+src/
+ ├─ context/CartContext.tsx   -> contexto del carrito
+ ├─ Components/               -> Header, Footer, Home, Products, ProductList, ProductCard, Cart, Contact
+ ├─ data/products.ts          -> catálogo de productos
+ └─ App.tsx / main.tsx        -> rutas y punto de entrada
 ```
